@@ -1,0 +1,142 @@
+*{
+    padding:0;  /**** espacio interior en cada elemento ****/
+    margin:0; /*** espacio exterior en cada elemento ***/
+    /*border: solid 1px #000;*/
+}
+
+body{
+    /*background-color: rgb(100, 255,150);*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+header{
+    background-image: url(../img/fondoAzul2.png);
+    background-repeat: no-repeat;/*no repetir la imagen de fondo*/
+    background-size: 100% 100%;/* tamaño en eje x y eje y*/
+    height: 100vh; /* imagen de fondo se redimensiona siempre */
+    color: white; /*letras blancas en el header*/
+}
+
+#main-container #header #menu{
+    padding: 50px 0; /*separación 50px separacion arriba y abajo 0% en derecha e izquierda*/
+}
+header #menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+header #menu ul li{
+    display: inline-block; /*muestra los elementos en bloque(al lado)*/
+    padding: 10px; /*separacion entre los objetosen los 4 lados(espacio interior)*/
+    vertical-align: middle; /*alineación vertical alineado los link con el logo*/
+}
+
+header #menu ul li a{
+    color:white;/*color del link inicialmente, NO SE VE EN CHROME*/
+    text-decoration: none;/*link sin subrayado, NO SE VE EN CHROME*/
+}
+
+header #menu ul li a:hover{/*al colocar el raton encima del link*/
+    color: yellow;/*color al colocarse sobre el link*/
+    text-decoration: underline;/*colocar el subrayado, NO SE VE EN CHROME*/
+}
+
+header #menu ul #logo{
+    margin-right: 37%; /*espacio del logo que abarca a derecha*/
+    margin-left: 30px; /*espacio del logo que abarca a izquierda*/    
+}
+
+/********************************************************/
+
+#main-container header main{
+    margin: 0 auto;/*centrar contenido (imagen tlf)*/
+    width: 1400px;/*especificamos el ancho pantalla*/
+
+}
+
+#main-container header main div{/*contenido salga en dos columnas*/
+    /*las letras luego al lado la imagen del tlf..*/
+    display:inline-block;/*letras al lado de la imagen (como en columnas separadas..)*/
+    vertical-align: middle;/*alineación vertical en el medio*/
+}
+
+#main-container header main .text h1{
+    /*tamaño del titulo (mas grande que el actual)*/
+    font-size: 80px; 
+}
+
+#main-container header main .text p{
+    font-size:24px;
+    padding: 20px 0;/*separación entre titulo y enunciado 20px arriba y abajo y 0 a los lados..*/
+}
+
+button{
+    background-color: #24d9e6;/*color boton*/
+    border:0;/*elimina borde*/
+    border-radius: 4px; /*borde redondeado en las esquinas*/
+    cursor:pointer; /*salga manita al colocar sobre el boton*/
+    color:white;/*color letras en blanco*/
+    font-size: 24px; /*tamaño letras dentro del boton*/
+    padding: 20px 25px; /*bordes internos del boton 6px arriba y abajo 6px a los lados*/
+    margin: 40px 0; /*margen externo del boton (para separar el boton del enunciado)*/
+
+}
+
+button:hover{
+        background-color: #14929b;
+}
+
+#main-container header main .image{
+    text-align: right; /*alinear la imagen del tlf a la derecha para que se vea que ocupa mejor el espacio*/
+    width:700px;/*pero no se ve el cambio porque el ancho es muy pequeño..por eso se aumenta a 700px*/
+
+}
+
+/*********************************/
+
+.layout{
+    width: 1280px;/*especificamos el ancho pantalla*/  
+    margin: 250px auto;/*centrar contenido (imagen tlf)*/ 
+}
+
+.layout div{
+    display: inline-block;/*letras al lado de la imagen (como en columnas separadas..)*/
+    vertical-align: middle; /*alineación vertical alineado los link con el logo*/
+}
+ .layout h3{
+    font-size: 48px;
+    padding: 25px 0;
+ }
+
+ .layout p{
+      padding: 25px 0;/*bordes internos del boton 25px arriba y abajo 0px a los lados*/
+      line-height: 32px; /*interlineado espacio entre lineas */ 
+ }
+
+ .layout-left .text{
+    width: 500px;
+ }
+ 
+ .layout-left .image{
+    width: 770px;
+    text-align: right;
+ }
+
+ .layout-right .text{
+    width: 500px;
+ }
+ 
+ .layout-right .image{
+    width: 770px;
+    text-align: center;
+ }
+
+ footer{
+     background-color: black;
+     padding: 150px 20px;
+     color: white;
+     text-align: center;
+ }
+
+
+
